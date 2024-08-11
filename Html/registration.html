@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form </title>
+    <link rel="stylesheet" href="../Css/style1.css">
+
+</head>
+<body>
+    <header>
+        <div class="home_btn">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="heading">
+            <h1>Registration Form</h1>
+            <h3>Required fields are marked as*</h3>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form action="" method="post">
+                <fieldset class="Personal Information">
+                    <legend>Personal Information</legend>
+
+                    <label for="f_name">First Name*:</label>
+                    <input type="text" name="f_name"id="f_name" placeholder="Mr.X" required>
+
+                    <label for="m_name">Middle Name:</label>
+                    <input type="text" name="m_name" id="m_name" placeholder="kumar">
+
+                    <label for="l_name">Last Name*:</label>
+                    <input type="text" name="l_name" id="l_name" placeholder="sharma" required> <br><br>
+
+                    <label for="fa_name">Father's Name*:</label>
+                    <input type="text" name="fa_name" id="fa_name" placeholder="Mr. Y Sharma " required> <br><br>
+
+                    <label for="gender">Gender*:</label>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="gender" required>
+
+                    <label for="male">Female</label>
+                    <input type="radio" name="gender" id="gender" required>
+
+                    <label for="male">Others</label>
+                    <input type="radio" name="gender" id="gender" required> <br><br>
+
+                    <label for="dob">Date of Birth*:</label>
+                    <input type="date" name="dob" id="dob" required>
+                </fieldset>
+
+                <fieldset class="Contact Details">
+                    <legend>Contact Details</legend>
+
+                    <label for="mb">Mobile Number*:</label>
+                    <input type="number" id="m_number" name="m_number" placeholder="XXXXXXXXXX" required> <br><br>
+
+                    <label for="email">Email ID*:</label>
+                    <input type="email" id="email" name="email" placeholder="@gmail.com" required> <br><br>
+
+                    <label for="Id_card">Choose Your ID Card:*</label>
+
+                    <label for="Aadhar"> Aadhar Card:</label>
+                    <input type="radio" id="aadhar" name="Id_card" value="aadhar">
+
+                    <label for="voter">Voter Card:</label>
+                    <input type="radio" id="voter" name="Id_card" value="voter">
+
+                    <label for="Pan">Pan Card:</label>
+                    <input type="radio" id="Pan" name="Id_card" value="Pan">
+
+                    <label for="license">Driving License :</label>
+                    <input type="radio" id="license" name="Id_card" value="license">
+
+                    <label for="Passport">Passport:</label>
+                    <input type="radio" id="passport" name="Id_card" value="passport"> <br><br>
+
+                    <label for="id_number">Enter ID Number*:</label>
+                    <input type="number" id="id_num" name="id_num" value="id_num" placeholder="XXXXXXXXXXXX" required> <br><br>
+
+                    <label for="states">Choose your state:</label>
+                    <select id="states" name="states">
+                        <option value="null">Select State</option>
+                        <option value="andhra_pradesh">Andhra Pradesh</option>
+                        <option value="arunachal_pradesh">Arunachal Pradesh</option>
+                        <option value="assam">Assam</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="chhattisgarh">Chhattisgarh</option>
+                        <option value="goa">Goa</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="himachal_pradesh">Himachal Pradesh</option>
+                        <option value="jharkhand">Jharkhand</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="madhya_pradesh">Madhya Pradesh</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="manipur">Manipur</option>
+                        <option value="meghalaya">Meghalaya</option>
+                        <option value="mizoram">Mizoram</option>
+                        <option value="nagaland">Nagaland</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="sikkim">Sikkim</option>
+                        <option value="tamil_nadu">Tamil Nadu</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="tripura">Tripura</option>
+                        <option value="uttar_pradesh">Uttar Pradesh</option>
+                        <option value="uttarakhand">Uttarakhand</option>
+                        <option value="west_bengal">West Bengal</option>
+                        <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="dadra_nagar_haveli">Dadra and Nagar Haveli</option>
+                        <option value="daman_diu">Daman and Diu</option>
+                        <option value="lakshadweep">Lakshadweep</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="puducherry">Puducherry</option>
+                        <option value="ladakh">Ladakh</option>
+                        <option value="jammu_kashmir">Jammu and Kashmir</option>
+                    </select> <br><br>
+
+                    <label for="address">Enter Your Full Address:</label>
+                    <textarea name="address" id="address" rows="3"></textarea>
+
+                    <label for="pin code">Pin Code*:</label>
+                    <input type="number" name="pin" id="pin" placeholder="XXXXXX" required>
+
+                </fieldset>
+
+                <fieldset class="Educational_Details">
+                    <legend>Educational Details </legend>
+
+                    <table border="3">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Passing Year</th>
+                                <th>Percentage(%)</th>
+                                <th>Board/University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SSC(Xth):*</td>
+                                <td><input type="text" name="xth_year" id="xth_year" required></td>
+                                <td><input type="text" name="xth_perc" id="xth_perc"required></td>
+                                <td><input type="text" name="xth_board" id="xth_board" required></td>
+                            </tr>
+                            <tr>
+                                <td>HSC(XIIth):*</td>
+                                <td><input type="text" name="xiith_year" id="xiith_year" required></td>
+                                <td><input type="text" name="xiith_perc" id="xiith_perc"required></td>
+                                <td><input type="text" name="xiith_board" id="xiith_board" required></td>
+                            </tr>
+                            <tr>
+                                <td>Diploma:</td>
+                                <td><input type="text" name="diploma_year" id="diploma_year" required></td>
+                                <td><input type="text" name="diploma_perc" id="diploma_perc"required></td>
+                                <td><input type="text" name="diploma_board" id="diploma_board" required></td>
+                            </tr>
+                            <tr>
+                                <td>Graduation*:</td>
+                                <td><input type="text" name="graduation_year" id="graduation_year" required></td>
+                                <td><input type="text" name="graduation_perc" id="graduation_perc"required></td>
+                                <td><input type="text" name="graduation_board" id="graduation_board" required></td>
+                            </tr>
+                            <tr>
+                                <td>Post Graduation:</td>
+                                <td><input type="text" name="graduation_year" id="graduation_year" ></td>
+                                <td><input type="text" name="graduation_perc" id="graduation_perc"></td>
+                                <td><input type="text" name="graduation_board" id="graduation_board"></td>
+                            </tr>
+                        </tbody>
+                    </table>                    
+
+                </fieldset>
+
+                <fieldset class="Profession">
+                    <legend>Wanted to Work as </legend>
+
+                    <label for="Java">Java Developer </label>
+                    <input type="checkbox" id="java" name="java" value="java">
+
+                    <label for="Ethical Hacker">Ethical Hacker</label>
+                    <input type="checkbox" id="hacker" name="hacker" value="hacker">
+
+                    <label for="Android Developer">Android Developer </label>
+                    <input type="checkbox" id="android developer" name="android developer" value="android developer">
+
+                    <label for="Full Stack">Full Stack Web Developer </label>
+                    <input type="checkbox" id="fusa" name="fusa" value="fusa">
+
+                    <label for="hr">Human Resource </label>
+                    <input type="checkbox" id="hr" name="hr" value="hr"> <br><br>
+
+                    <label for="cv">Upload Your Latest CV:</label>
+                    <input type="file" id="cv" name="cv" required>
+
+                </fieldset>
+
+                <div class="btn">
+                    <input type="submit" name="register" id="register" value="Register" class="sub">
+                    <input type="reset" name="reset" id="reset" value="Reset" class="res">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
