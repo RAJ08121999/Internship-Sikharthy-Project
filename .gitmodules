@@ -1,0 +1,6 @@
+[submodule "VideoGallery"]
+	path = VideoGallery
+	url = https://github.com/RAJ08121999/VideoGallery
+[submodule "LCGCollegeWebsite"]
+	path = LCGCollegeWebsite
+	url = https://github.com/RAJ08121999/LCGCollegeWebsite
