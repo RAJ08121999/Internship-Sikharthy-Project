@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#green{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#blue{
+    background-color:blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#yellow{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#pink{
+    background-color:pink;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#maroon{
+    background-color:maroon;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#red{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
