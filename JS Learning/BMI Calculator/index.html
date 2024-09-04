@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <div>
+            <p>
+                Enter your Weight: <br>
+            </p>
+            <input type="number" id="weight"> <br>
+        </div>
+        
+        <div>
+            <p>Enter your height:</p><br>
+            <input type="number" id="height">
+        </div>
+
+        <button>Calculate</button>
+
+        <p id="msg">
+        </p>
+    </form>
+
+    <script>
+        const form = document.getElementById("form");
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            const weight=document.getElementById("weight").value;
+            const height=document.getElementById("height").value;
+            const result = document.getElementById("msg");
+
+            const bmi = (weight / ((height*height)/10000)).toFixed(2);
+
+            result.innerHTML= `<span>${bmi}</span>`;
+        });
+    
+        //console.log(weight,height);
+
+    /* let bmi= ((weight)/(height*height));
+        if(bmi<16)
+        {
+            msg.innerText=bmi;
+        }
+        else if(bmi>=17)
+        {
+            msg.innerText=bmi;
+
+        }
+        else if(bmi>=18.5)
+        {
+            msg.innerText=bmi;
+
+        }
+        else if(bmi>=25){
+            msg.innerText=bmi;
+
+        }
+        else if(bmi>=30)
+        {
+            msg.innerText=bmi;
+
+        }
+        else if(bmi>=35)
+        {
+            msg.innerText=bmi;
+
+        }
+        else if(bmi>=40)
+        {
+            msg.innerText=bmi;
+
+        }
+        else{
+            msg.innerText=bmi;
+
+        }*/
+    </script>
+</body>
+</html>
