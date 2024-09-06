@@ -35,49 +35,42 @@
 
             const bmi = (weight / ((height*height)/10000)).toFixed(2);
 
-            result.innerHTML= `<span>${bmi}</span>`;
+            if(bmi<16)
+            {
+                result.innerHTML= `<span> Severe Thinness ${bmi}</span>`;
+            }
+            else if(bmi<=17)
+            {
+                result.innerHTML= `<span>  Moderate Thinness ${bmi}</span>`;
+            }
+            else if(bmi<=18.5)
+            {
+                result.innerHTML= `<span> Mild Thinness  ${bmi}</span>`;
+            }
+            else if(bmi>=25){
+                result.innerHTML= `<span> Normal ${bmi}</span>`;
+            }
+            else if(bmi>=30)
+            {
+                result.innerHTML= `<span> OverWeight ${bmi}</span>`;
+
+            }
+            else if(bmi>=35)
+            {
+                result.innerHTML= `<span> Obese Class 1 ${bmi}</span>`;
+
+            }
+            else if(bmi>=40)
+            {
+                result.innerHTML= `<span> Obese class 2 ${bmi}</span>`;
+
+            }
+            else{
+                result.innerHTML= `<span> obese class 3 ${bmi}</span>`;
+
+            }
         });
-    
-        //console.log(weight,height);
 
-    /* let bmi= ((weight)/(height*height));
-        if(bmi<16)
-        {
-            msg.innerText=bmi;
-        }
-        else if(bmi>=17)
-        {
-            msg.innerText=bmi;
-
-        }
-        else if(bmi>=18.5)
-        {
-            msg.innerText=bmi;
-
-        }
-        else if(bmi>=25){
-            msg.innerText=bmi;
-
-        }
-        else if(bmi>=30)
-        {
-            msg.innerText=bmi;
-
-        }
-        else if(bmi>=35)
-        {
-            msg.innerText=bmi;
-
-        }
-        else if(bmi>=40)
-        {
-            msg.innerText=bmi;
-
-        }
-        else{
-            msg.innerText=bmi;
-
-        }*/
     </script>
 </body>
 </html>
