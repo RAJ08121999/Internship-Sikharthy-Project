@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   // java script write here
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   const changeColor = (e) => {
     if (e.target.id == "red") {
@@ -35,8 +35,13 @@ function App() {
         if (count > 0) {
           setCount(count - 1);
         }
-      }}>-</button>
+        }
+      }>-</button>
+
+
       <span>{count}</span>
+
+
       <button onClick={() => {
         if (count < 20) {
           setCount(count + 1);
@@ -48,6 +53,7 @@ function App() {
         changeColor(e);
       }
       }>red</button>
+
       <button id='green' onClick={(e) => {
         changeColor(e);
       }
@@ -56,18 +62,22 @@ function App() {
       <button id='blue'
       onClick={(e)=>{
         changeColor(e);
-      }
+        }
       }>blue</button>
+
       <button id='black'
       onClick={(e)=>
         {
           changeColor(e);
-        }}>black</button>
+        }
+      }>black</button>
+
       <button id='white'onClick={(e)=>
         {
           changeColor(e);
-        }}>white</button>
-
+        }
+      }>white</button>
+      
     </>
   )
 }
